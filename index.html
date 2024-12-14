@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Weather UCO</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Search for cities" />
+            <button id="search-btn">Search</button>
+            <button id="toggle-unit">°C / °F</button>
+            <button id="toggle-theme">Light/Dark Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="current-weather">
+            <h2 id="city-name">City Name</h2>
+            <!-- Default icon -->
+            <p id="temperature">--°C</p>
+            <p id="details">
+                Wind: <span id="wind-speed">-- km/h</span>, Pressure: <span id="pressure">-- mb</span>
+            </p>
+        </section>
+        
+
+        <section class="forecast">
+            <h3>6-Day Forecast</h3>
+            <div class="forecast-grid" id="forecast-grid">
+                <i id="weather-icon" class=""></i>
+                <!-- JavaScript will populate this -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="http://www.icuzambia.net" target="_blank">ICU Zambia</a> |
+            <a href="https://www.zrdc.org" target="_blank">ZRDC</a>
+        </div>
+        <div class="student-info">
+            <p>Student Name: <span id="student-name">Ashley T.S Musunga</span></p>
+            <p>Student Number: <span id="student-number">2309804458</span></p>
+            <p>&copy; 2024 Weather UCO. Chisankane Ward. All Rights Reserved. Designed and 
+                Maintained </p>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
